@@ -1,8 +1,17 @@
 /* Mobile view */
+.container {
+  display: grid;
+  grid-template-columns: 5% auto 5%;
+  grid-template-rows: 70px 500px 1fr 40px;
+}
 /* End of mobile view */
 
 /* Desktop View */
 @media screen and (min-width: 900px) {
-  
+  .container {
+    display: grid;
+    grid-template-columns: 5% auto 5%;
+    grid-template-rows: 100px 500px 1fr 70px;
+  }
 }
 /* End of mobile view */

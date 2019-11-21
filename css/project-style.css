@@ -1,4 +1,7 @@
 /* Mobile view */
+body {
+  font-family: 'Roboto', sans-serif;
+}
 .container {
   display: grid;
   grid-template-columns: 5% auto 5%;
@@ -29,12 +32,6 @@
 #project-footer {
   grid-column: 2 / span 1;
   grid-row: 4 / span 1;
-
-
-.project1_page_content{
-	display: grid;
-}
-
 
 nav ul{
   display: none;
@@ -118,7 +115,6 @@ nav p{
 h1 {
   display: none;
 }
->>>>>>> 632fd2bab1b6e83d3ed5e112fcf74ce52735215b
 /* End of mobile view */
 
 /* Desktop View */

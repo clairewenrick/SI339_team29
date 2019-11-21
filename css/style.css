@@ -16,18 +16,20 @@ body {
   position: absolute;
   /* top: 0; */
 }
-#project-page-title {
+#project-title {
   grid-column: 2 / span 1;
   grid-row: 2 / span 1;
 }
-#project-page-content {
+#project-content {
   grid-column: 2 / span 1;
   grid-row: 3 / span 1;
 
   display: grid;
-
+  grid-gap: 15px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
-#project-page-footer {
+#project-footer {
   grid-column: 2 / span 1;
   grid-row: 4 / span 1;
 }

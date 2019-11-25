@@ -9,9 +9,11 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 5px auto 5px;
+  grid-template-columns: 5px auto 5px ;
+  /* 5px auto 5px */
   grid-template-rows: 5px 70px auto auto auto auto 100px;
 /* 5px 70px 150px 200px 1fr 40px 5px */
+/* 5px 70px auto auto auto auto 100px */
 }
 
 .nav {
@@ -110,12 +112,12 @@ h1 {
   display: none;
 }
 
-.nq_pic {
+.index_pic {
   grid-column: 2/ span 1;
   grid-row: 3 / span 1;
 }
 
-.northquad{
+.indextrees{
   max-height: 350px;
   width: 100%;
 }
@@ -123,9 +125,9 @@ h1 {
 .about{
   grid-column: 2/ span 1;
   grid-row: 3 / span 1;
-  background-color: white;
-  opacity: 0.5;
-  background-image: url('../images/header.jpg')
+  /* background-color: white;
+  opacity: 0.5; */
+  background-image: url('../images/indextrees.jpg')
 }
 
 .us {
@@ -141,6 +143,14 @@ h1 {
 footer{
   grid-column: 2/ span 1;
   grid-row: 7 / span 1;
+  background-color: navy;
+  color: white;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
 }
 
 /* End of mobile view */
@@ -148,9 +158,9 @@ footer{
 /* Desktop View */
 @media screen and (min-width: 900px) {
   .container {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 5% auto 5%;
-    grid-template-rows: 100px 500px 1fr 70px;
+    grid-template-rows: 100px 500px 1fr 70px; */
   }
 }
 /* End of desktop view */

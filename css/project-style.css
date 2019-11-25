@@ -15,7 +15,7 @@ body {
   grid-column: 1 / -1;
   grid-row: 1 / auto;
 }
-#project-title {
+#project-main {
   grid-column: 1 / -1;
   grid-row: 2 / span 1;
 
@@ -150,10 +150,11 @@ nav ul{
   display: none;
   position: absolute;
   background-color: white;
-  /* min-width: 70px; */
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  padding: 10px 10px;
+  /* padding: 10px 10px; */
+  grid-row: 1 / span 1;
+  grid-column: 1 / auto;
 }
 
 .menu li{
@@ -162,7 +163,12 @@ nav ul{
 .menu a{
   color: #3B8686;
   display: block;
-  /* padding: 5px; */
+  text-decoration: none;
+  padding: 10px 10px;
+}
+.menu a:hover, .menu a.active {
+  color: white;
+  background-color: #79BD9A;
 }
 
 .dropcontent:hover .menu, .dropcontent:focus .menu{

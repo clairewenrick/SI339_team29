@@ -3,6 +3,9 @@
   grid-template-columns: 5% auto 5%;
   grid-template-rows: 70px 500px 1fr 40px;
 }
+nav{
+	display: none;
+}
 
 .nav {
   grid-column: 1 / -1;
@@ -98,6 +101,22 @@ nav p{
 
 
 	display: grid;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+.project1_title h1{
+	color: #CFF09E;
+}
+.project1_title{
+
+	background-image: url("../images/background.jpg");
+	min-height: 300px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 30px;
 }
 
 footer{

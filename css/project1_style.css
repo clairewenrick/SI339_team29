@@ -29,7 +29,7 @@ nav ul{
 
 }
 .menu-btn{
-  background-color: navy;
+  background-color: #0B486B;
   color: white;
   font-size: 16px;
   border: none;
@@ -45,13 +45,15 @@ nav ul{
   z-index: 1;
   padding: 10px 10px;
 }
-
+.menu ul{
+	text-align: left;
+}
 .menu li{
   list-style-type: none;
   padding-right: 5px;
 }
 .menu a{
-  color: navy;
+  color: #0B486B;
   display: block;
   /* padding: 5px; */
 }
@@ -95,20 +97,21 @@ nav p{
 *:focus{
   border: 2px solid navy;
 }
-.project1_page_content{
-	grid-column: 2/ span 1;
-	grid-row: 3/ span 1;
-
-
-	display: grid;
-}
 body{
   font-family: 'Open Sans', sans-serif;
 }
+
 .project1_title h1{
-	color: #CFF09E;
+	color: white;
+
 }
 .project1_title{
+	grid-column: 1 / -1;
+	grid-row: 2 / span 1;
+
+	font-size: 30px;
+	color: white;
+	text-align: center;
 
 	background-image: url("../images/background.jpg");
 	min-height: 300px;
@@ -118,8 +121,17 @@ body{
 	background-size: cover;
 	margin-bottom: 30px;
 }
+.project1_page_content{
+	grid-column: 2/ span 1;
+	grid-row: 3/ span 1;
+	display: grid;
+}
 
-footer{
+
+
+footer {
 	grid-row: 4/ span 1;
-	grid-column: 1/ -1
+	grid-column: 1/ -1;
+	background-color: #3B8686;
+	color: white;
 }

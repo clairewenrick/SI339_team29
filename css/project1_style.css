@@ -80,6 +80,19 @@ nav p{
   font-size: 20px;
 }
 
+.nav{
+	background-color: #CFF09E;
+}
+.nav p{
+	grid-column: -1 / 1;
+	grid-row: 1/span 1;
+	color:#0B486B;
+	padding-top: 25px;
+	padding-left: 20px;
+	font-weight: bold;
+
+}
+
 .skip a{
   background: navy;
   color: white;
@@ -122,6 +135,7 @@ body{
 }
 .project1_title h1{
 	padding-top: 200px;
+	font-weight: bold;
 }
 .project1_page_content{
 	grid-column: 2/ span 1;
@@ -131,8 +145,11 @@ body{
 	grid-template-rows: .5fr .25fr .5fr;
 }
 .abstract{
+	grid-row: 1/ span 1;
+	grid-column: auto;
 	color: #0B486B;
 	padding-bottom: 20px;
+	text-align: center;
 }
 
 .talk a:link, .talk a:visited {
@@ -146,6 +163,23 @@ body{
 
 .talk a:hover, .talk a:active {
   background-color: #0B486B;
+}
+
+.talk{
+	grid-row: 2/ span 1;
+	grid-column: auto;
+	text-align: center;
+	padding-bottom: :20px;
+}
+
+.video{
+	grid-row: 3/ span 1;
+	grid-column: auto;
+	text-align: center;
+}
+
+.video h2{
+	padding-top: 20px;
 }
 
 h2{

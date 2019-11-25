@@ -1,0 +1,318 @@
+/* Mobile view */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+  display: grid;
+  grid-template-columns: 5% auto 5%;
+  grid-template-rows: 70px 500px 1fr 40px;
+}
+
+.nav {
+  grid-column: -1 / 1;
+  grid-row: 1/auto;
+  /* align-content: center; */
+  /* padding: 10px 0; */
+  /* position: absolute; */
+  /* top: 0; */
+}
+
+nav ul{
+  display: none;
+}
+
+.dropcontent{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: inline-block;
+
+}
+.menu-btn{
+  background-color: navy;
+  color: white;
+  font-size: 16px;
+  border: none;
+  height: 40px;
+  width: 120px;
+}
+
+#project-title {
+  grid-column: 1 / -1;
+  grid-row: 2 / span 1;
+
+  color: white;
+  text-align: center;
+  /* Make h1 in the center */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  line-height: 50px;
+
+  /* Parallax effect */
+  background-image: url("../images/team-trees.jpg");
+  min-height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 40pt;
+}
+
+#email {
+  font-size: 17pt;
+  color: white;
+  font-weight: 100;
+}
+
+#email:hover, #email:focus {
+  color: #CFF09E;
+}
+
+.menu{
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 10px 10px;
+}
+
+.menu li{
+  list-style-type: none;
+}
+.menu a{
+  color: navy;
+  display: block;
+  /* padding: 5px; */
+}
+
+.dropcontent:hover .menu{
+  display: block;
+}
+
+.dropdown li.homenav, .dropdown li.educnav, .dropdown li.expernav, .dropdown li.gallnav {
+  background-color: yellow;
+  border-color: navy;
+}
+
+nav p{
+  grid-column: -1 / 1;
+  grid-row: 1/auto;
+  display: block;
+  position: relative;
+  color: navy;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.skip a{
+  background: navy;
+  color: white;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-in;
+  z-index: 1;
+}
+
+.skip a:focus{
+  top: 0px;
+}
+
+*:focus{
+  border: 2px solid navy;
+}
+
+header a {
+  font-size: 40pt;
+  grid-row: 2;
+}
+
+.team-grid {
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+
+  display: grid;
+  grid-row-gap: 30px;
+  grid-template-rows: 425px 425px 425px 425px 450px 450px;
+}
+
+#mark-newman {
+  grid-row: 1;
+}
+
+#rayoung-yang {
+  grid-row: 2;
+}
+
+#gaurav-paruthi {
+  grid-row: 3;
+}
+
+#tao-dong {
+  grid-row: 4;
+}
+
+#yung-ju-chang {
+  grid-row: 5;
+}
+
+#chuan-che-huang {
+  grid-row: 6;
+}
+
+.people img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 220px;
+  width: 100%;
+  box-shadow: 0 4px 12px 0 rgba(0,0,0,0.2);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+}
+
+.paragraph {
+  text-align: center;
+  color: #252525;
+}
+
+h2, p {
+  text-align: center;
+}
+
+.people {
+  grid-column: 1 / -1;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 70%;
+  border-radius: 10px;
+}
+.people:hover, .people:focus {
+  box-shadow: 0 8px 24px 0 rgba(0,0,0,0.2);
+}
+.people h3, p, a {
+  padding-bottom: 10px;
+  line-height: 1.2;
+}
+.people h2 {
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+}
+.people h3 {
+  font-size: 20px;
+  color: #252525;
+}
+
+a {
+  text-decoration: none;
+  color: #3B8686;
+}
+
+a:hover, a:focus {
+  color: #79BD9A;
+}
+
+#project-footer {
+  grid-column: 2;
+  grid-row: 4;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.icons a {
+  text-decoration: none;
+  color: white;
+  background-color: #0B486B;
+  padding: 10px;
+  border-radius: 10px;
+}
+.icons a:hover, .icons a:focus {
+  background-color: #3B8686;
+  color: white;
+}
+
+/* End of mobile view */
+
+/* Desktop View */
+@media screen and (min-width: 900px) {
+  .container {
+    display: grid;
+    grid-template-columns: 5% auto 5%;
+    grid-template-rows: 100px 500px 1fr 70px;
+  }
+
+  .team-grid {
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-row-gap: 30px;
+  grid-template-rows: 425px 425px 425px;
+}
+
+  #mark-newman {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#rayoung-yang {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#gaurav-paruthi {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#tao-dong {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#yung-ju-chang {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+#chuan-che-huang {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.people img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 220px;
+  width: 100%;
+  box-shadow: 0 4px 12px 0 rgba(0,0,0,0.2);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+h1 {
+  font-size: 70pt;
+}
+
+#email {
+  font-size: 23pt;
+  color: white;
+  font-weight: 100;
+}
+
+
+
+}
+/* End of mobile view */

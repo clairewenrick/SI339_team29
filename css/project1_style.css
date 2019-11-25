@@ -1,44 +1,27 @@
-/* Mobile view */
 .container {
   display: grid;
   grid-template-columns: 5% auto 5%;
   grid-template-rows: 70px 500px 1fr 40px;
 }
+nav{
+	display: none;
+}
 
 .nav {
-  grid-column: -1 / 1;
-  grid-row: 1/ span 1;
+  grid-column: 1 / -1;
+  grid-row: 1 / auto;
+}
+
   /* align-content: center; */
+  /* padding: 10px 0; */
   /* position: absolute; */
+  /* top: 0; */
 }
-#project-title {
-  grid-column: 2 / span 1;
-  grid-row: 2 / span 1;
-}
-#project-content {
-  grid-column: 2 / span 1;
-  grid-row: 3 / span 1;
-
-  display: grid;
-  grid-gap: 15px;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-#project-footer {
-  grid-column: 2 / span 1;
-  grid-row: 4 / span 1;
-
-
-.project1_page_content{
-	display: grid;
-}
-
-
 nav ul{
   display: none;
 }
 
-.dropdown{
+.dropcontent{
   position: absolute;
   top: 0px;
   right: 0px;
@@ -58,7 +41,6 @@ nav ul{
   display: none;
   position: absolute;
   background-color: white;
-  /* min-width: 70px; */
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   padding: 10px 10px;
@@ -66,6 +48,7 @@ nav ul{
 
 .menu li{
   list-style-type: none;
+  padding-right: 5px;
 }
 .menu a{
   color: navy;
@@ -92,7 +75,6 @@ nav p{
   color: navy;
   font-weight: bold;
   font-size: 20px;
-  top: 0;
 }
 
 .skip a{
@@ -113,19 +95,31 @@ nav p{
 *:focus{
   border: 2px solid navy;
 }
+.project1_page_content{
+	grid-column: 2/ span 1;
+	grid-row: 3/ span 1;
 
-h1 {
-  display: none;
-}
->>>>>>> 632fd2bab1b6e83d3ed5e112fcf74ce52735215b
-/* End of mobile view */
 
-/* Desktop View */
-@media screen and (min-width: 900px) {
-  .container {
-    display: grid;
-    grid-template-columns: 5% auto 5%;
-    grid-template-rows: 100px 500px 1fr 70px;
-  }
+	display: grid;
 }
-/* End of mobile view */
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+.project1_title h1{
+	color: #CFF09E;
+}
+.project1_title{
+
+	background-image: url("../images/background.jpg");
+	min-height: 300px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 30px;
+}
+
+footer{
+	grid-row: 4/ span 1;
+	grid-column: 1/ -1
+}

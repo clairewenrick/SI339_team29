@@ -450,7 +450,7 @@ footer{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 90%;
   border-radius: 5px;
@@ -464,13 +464,17 @@ footer{
 }
 
 .about h2{
-  padding-top: 5px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  font-size: 20pt;
+  color: #3B8686;
 }
 
 .about p{
   font-size: 17px;
   padding-left: 5px;
   padding-right: 5px;
+  padding-bottom: 15px;
 }
 
 .us {
@@ -482,13 +486,17 @@ footer{
 }
 
 .us h3{
-  padding-top: 5px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  font-size: 20pt;
+  color: #3B8686;
 }
 
 .us p{
   font-size: 17px;
   padding-left: 5px;
   padding-right: 5px;
+  padding-bottom: 15px;
 }
 
 .affiliation {
@@ -500,13 +508,17 @@ footer{
 }
 
 .affiliation h4{
-  padding-top: 5px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  font-size: 20pt;
+  color: #3B8686;
 }
 
 .affiliation p{
   font-size: 17px;
   padding-left: 5px;
   padding-right: 5px;
+  padding-bottom: 15px;
 }
 footer {
   color: #3B8686;
@@ -716,7 +728,7 @@ font-weight: 100;
 .index_fraction{
   grid-template-columns: 1fr;
   grid-template-rows: .85fr 1fr .40fr;
-  grid-row-gap: 20px;
+  grid-row-gap: 40px;
 }
 .about{
   grid-column: 1/ -1;
@@ -727,7 +739,10 @@ font-weight: 100;
 }
 
 .about h2{
-  padding-top: 5px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  font-size: 30pt;
+  color: #3B8686;
 }
 
 .about p{
@@ -735,6 +750,7 @@ font-weight: 100;
   padding-right: 30px;
   font-size: 20px;
   padding-top: 5px;
+  padding-bottom: 20px;
 }
 
 .us {
@@ -744,7 +760,10 @@ font-weight: 100;
 }
 
 .us h3{
-  padding-top: 5px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  font-size: 30pt;
+  color: #3B8686;
 }
 
 .us p{
@@ -752,6 +771,7 @@ font-weight: 100;
   padding-right: 30px;
   font-size: 20px;
   padding-top: 5px;
+  padding-bottom: 20px;
 }
 
 .affiliation {
@@ -761,7 +781,10 @@ font-weight: 100;
 }
 
 .affiliation h4{
-  padding-top: 5px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  font-size: 30pt;
+  color: #3B8686;
 }
 
 .affiliation p{
@@ -769,6 +792,7 @@ font-weight: 100;
   padding-right: 30px;
   font-size: 20px;
   padding-top: 5px;
+  padding-bottom: 20px;
 }
 }
 /* End of desktop view */

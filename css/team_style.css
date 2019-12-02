@@ -141,7 +141,7 @@ header a {
 
   display: grid;
   grid-row-gap: 30px;
-  grid-template-rows: 425px 425px 425px 425px 450px 450px;
+  grid-template-rows: 425px 425px 425px 425px 425px 425px;
 }
 
 #mark-newman {
@@ -221,24 +221,35 @@ a {
 a:hover, a:focus {
   color: #79BD9A;
 }
-
-#project-footer {
-  grid-column: 2;
-  grid-row: 4;
-  text-align: center;
-  margin-top: 10px;
 }
 
+#project-footer{
+  grid-column: 2 / span 1;
+  grid-row: 4 / span 1;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  max-height: 50px;
+  color: #252525;
+}
+
+
+.icons {
+  padding-left: 7px;
+  padding-top: 17px;
+}
 .icons a {
   text-decoration: none;
   color: white;
   background-color: #0B486B;
-  padding: 10px;
+  padding: 11px;
   border-radius: 10px;
 }
+
 .icons a:hover, .icons a:focus {
   background-color: #3B8686;
   color: white;
+  box-shadow: 0 4px 7px 0 rgba(0,0,0,0.2);
 }
 
 /* End of mobile view */
@@ -310,6 +321,15 @@ h1 {
   font-size: 23pt;
   color: white;
   font-weight: 100;
+}
+
+#project-footer {
+  grid-column: 2;
+  grid-row: 4;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #252525;
 }
 
 

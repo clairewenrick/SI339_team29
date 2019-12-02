@@ -93,8 +93,8 @@ nav ul{
   display: block;
 }
 
-.dropdown li.homenav, .dropdown li.educnav, .dropdown li.expernav, .dropdown li.gallnav {
-  background-color: yellow;
+.dropcontent li.home:hover, .dropcontent li.team:hover, .dropcontent li.projects:hover, .dropcontent li.project1:hover {
+  background-color: #ffffe0;
   border-color: #0B486B;
 }
 
@@ -136,7 +136,8 @@ h1 {
 .fraction{
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 200px 200px 100px;
+  grid-template-rows: 200px 250px 200px;
+  grid-row-gap: 20px;
 }
 
 .about{
@@ -145,11 +146,26 @@ h1 {
   color: #0B486B;
   text-align: center;
   font-size: 30px;
+  padding-top: 50px;
+  /* display: grid; */
+  /* grid-template-columns: 1fr;
+  grid-template-rows: 500px; */
+}
+
+.about h2{
+  /* float: left; */
+  /* grid-column: 50%;
+  grid-row: 1 / auto; */
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 5px;
 }
 
 .about p{
-  padding-left: 20px;
-  padding-right: 20px;
+  /* grid-column: 50%;
+  grid-row: 1 / auto; */
+  padding-left: 30px;
+  padding-right: 30px;
   font-size: 20px;
 }
 
@@ -159,12 +175,27 @@ h1 {
   color: #0B486B;
   text-align: center;
   font-size: 30px;
+  padding-top: 50px;
+  /* display: grid; */
+  /* grid-template-columns: 1fr;
+  grid-template-rows: 500px; */
+}
+
+.us h3{
+  /* float: left; */
+  /* grid-column: 50%;
+  grid-row: 1 / auto; */
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 5px;
 }
 
 .us p{
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
   font-size: 20px;
+  /* grid-column: 50%;
+  grid-row: 1 / auto; */
 }
 
 .affiliation {
@@ -173,17 +204,32 @@ h1 {
   color: #0B486B;
   text-align: center;
   font-size: 30px;
+  padding-top: 50px;
+  /* display: grid; */
+  /* grid-template-columns: 1fr;
+  grid-template-rows: 500px; */
+}
+
+.affiliation h4{
+  /* float: left; */
+  /* grid-column: 50%;
+  grid-row: 1 / auto; */
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 5px;
 }
 
 .affiliation p{
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
   font-size: 20px;
+  /* grid-column: 50%;
+  grid-row: 1 / auto; */
 }
 
 footer{
-  grid-column: 2/ span 1;
-  grid-row: 7 / span 1;
+  grid-column: 2/ auto;
+  grid-row: 4 / auto;
   background-color: #0B486B;
   color: white;
   text-align: center;
@@ -195,6 +241,27 @@ footer{
   padding-top: 10px;
 }
 
+/* .about:hover h2{
+  animation-duration: 1s;
+  animation-name: bounceIn;
+}
+
+@keyframes bounceIn {
+0% {
+  transform: scale(0.1);
+  opacity: 0;
+}
+60% {
+  transform: scale(1.2);
+  opacity: 1;
+}
+100% {
+  transform: scale(1);
+}
+
+} */
+
+
 /* End of mobile view */
 
 /* Desktop View */
@@ -204,5 +271,93 @@ footer{
     grid-template-columns: 5% auto 5%;
     grid-template-rows: 100px 500px 1fr 70px; */
   }
+
+  .about{
+    grid-column: 1/ -1;
+    grid-row: 1 / auto;
+    color: #0B486B;
+    text-align: center;
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 500px;
+  }
+
+  .about:hover, .us:hover, .affiliation:hover {
+    background-color: #ffffe0;
+    border-color: #0B486B;
+  }
+
+  .about h2{
+    /* float: left; */
+    grid-column: 50%;
+    grid-row: 1 / auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .about p{
+    grid-column: 50%;
+    grid-row: 1 / auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+  }
+
+  .us {
+    grid-column: 1/ -1;
+    grid-row: 2 / auto;
+    color: #0B486B;
+    text-align: center;
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 500px;
+  }
+
+  .us h3{
+    /* float: left; */
+    grid-column: 50%;
+    grid-row: 1 / auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .us p{
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+    grid-column: 50%;
+    grid-row: 1 / auto;
+  }
+
+  .affiliation {
+    grid-column: 1/ -1;
+    grid-row: 3 / auto;
+    color: #0B486B;
+    text-align: center;
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 500px;
+  }
+
+  .affiliation h4{
+    /* float: left; */
+    grid-column: 50%;
+    grid-row: 1 / auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .affiliation p{
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+    grid-column: 50%;
+    grid-row: 1 / auto;
+  }
+
+
 }
 /* End of desktop view */

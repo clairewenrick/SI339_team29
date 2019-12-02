@@ -223,6 +223,14 @@ footer{
     grid-template-rows: 500px;
   }
 
+<<<<<<< HEAD
+=======
+  /* .about:hover, .us:hover, .affiliation:hover {
+    background-color: #ffffe0;
+    border-color: #0B486B;
+  } */
+
+>>>>>>> 49b8983bc67d0940ce5684d4c5f64689a8cba176
   .about h2{
     grid-column: 1/auto;
     grid-row: 1 / auto;

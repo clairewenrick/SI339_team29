@@ -60,7 +60,7 @@ nav ul{
   margin-bottom: 30px;
 }
 
-h1 {
+#project-title h1 {
   font-size: 40pt;
 }
 
@@ -130,7 +130,7 @@ nav p{
   border: 2px solid navy;
 }
 
-header a {
+#project-title header a {
   font-size: 40pt;
   grid-row: 2;
 }
@@ -185,7 +185,7 @@ header a {
   color: #252525;
 }
 
-h2, p {
+.paragraph h2, p {
   text-align: center;
 }
 
@@ -213,12 +213,12 @@ h2, p {
   color: #252525;
 }
 
-a {
+.people a {
   text-decoration: none;
   color: #3B8686;
 }
 
-a:hover, a:focus {
+.people a:hover, .people a:focus {
   color: #79BD9A;
 }
 }

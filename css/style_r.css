@@ -23,13 +23,6 @@ body {
 }
 
 nav p{
-  /* text-align: center;
-  display: inline-block;
-  position: absolute;
-  color: #0B486B;
-  font-weight: bold;
-  font-size: 20px;
-  padding-left: 8px; */
 
   grid-column: -1 / 1;
   grid-row: 1/auto;
@@ -51,8 +44,6 @@ nav ul{
 
 .dropcontent{
   position: absolute;
-  /* right: 5px;
-  height: 70px; */
   top: 0px;
   right: 0px;
   display: inline-block;
@@ -147,23 +138,15 @@ h1 {
   text-align: center;
   font-size: 30px;
   padding-top: 50px;
-  /* display: grid; */
-  /* grid-template-columns: 1fr;
-  grid-template-rows: 500px; */
 }
 
 .about h2{
-  /* float: left; */
-  /* grid-column: 50%;
-  grid-row: 1 / auto; */
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 5px;
 }
 
 .about p{
-  /* grid-column: 50%;
-  grid-row: 1 / auto; */
   padding-left: 30px;
   padding-right: 30px;
   font-size: 20px;
@@ -176,15 +159,9 @@ h1 {
   text-align: center;
   font-size: 30px;
   padding-top: 50px;
-  /* display: grid; */
-  /* grid-template-columns: 1fr;
-  grid-template-rows: 500px; */
 }
 
 .us h3{
-  /* float: left; */
-  /* grid-column: 50%;
-  grid-row: 1 / auto; */
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 5px;
@@ -194,8 +171,6 @@ h1 {
   padding-left: 30px;
   padding-right: 30px;
   font-size: 20px;
-  /* grid-column: 50%;
-  grid-row: 1 / auto; */
 }
 
 .affiliation {
@@ -205,15 +180,9 @@ h1 {
   text-align: center;
   font-size: 30px;
   padding-top: 50px;
-  /* display: grid; */
-  /* grid-template-columns: 1fr;
-  grid-template-rows: 500px; */
 }
 
 .affiliation h4{
-  /* float: left; */
-  /* grid-column: 50%;
-  grid-row: 1 / auto; */
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 5px;
@@ -223,8 +192,6 @@ h1 {
   padding-left: 30px;
   padding-right: 30px;
   font-size: 20px;
-  /* grid-column: 50%;
-  grid-row: 1 / auto; */
 }
 
 footer{
@@ -240,37 +207,10 @@ footer{
   height: 40px;
   padding-top: 10px;
 }
-
-/* .about:hover h2{
-  animation-duration: 1s;
-  animation-name: bounceIn;
-}
-
-@keyframes bounceIn {
-0% {
-  transform: scale(0.1);
-  opacity: 0;
-}
-60% {
-  transform: scale(1.2);
-  opacity: 1;
-}
-100% {
-  transform: scale(1);
-}
-
-} */
-
-
 /* End of mobile view */
 
 /* Desktop View */
 @media screen and (min-width: 900px) {
-  .container {
-    /* display: grid;
-    grid-template-columns: 5% auto 5%;
-    grid-template-rows: 100px 500px 1fr 70px; */
-  }
 
   .about{
     grid-column: 1/ -1;
@@ -279,7 +219,7 @@ footer{
     text-align: center;
     font-size: 30px;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 300px 700px;
     grid-template-rows: 500px;
   }
 
@@ -289,19 +229,20 @@ footer{
   }
 
   .about h2{
-    /* float: left; */
-    grid-column: 50%;
+    grid-column: 1/auto;
     grid-row: 1 / auto;
     padding-left: 30px;
     padding-right: 30px;
+    text-align: left;
   }
 
   .about p{
-    grid-column: 50%;
+    grid-column: 2/auto;
     grid-row: 1 / auto;
     padding-left: 30px;
     padding-right: 30px;
     font-size: 20px;
+    text-align: left;
   }
 
   .us {
@@ -311,24 +252,25 @@ footer{
     text-align: center;
     font-size: 30px;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 300px 700px;
     grid-template-rows: 500px;
   }
 
   .us h3{
-    /* float: left; */
-    grid-column: 50%;
+    grid-column: 1/auto;
     grid-row: 1 / auto;
     padding-left: 30px;
     padding-right: 30px;
+    text-align: left;
   }
 
   .us p{
     padding-left: 30px;
     padding-right: 30px;
     font-size: 20px;
-    grid-column: 50%;
+    grid-column: 2/auto;
     grid-row: 1 / auto;
+    text-align: left;
   }
 
   .affiliation {
@@ -338,26 +280,47 @@ footer{
     text-align: center;
     font-size: 30px;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 300px 700px;
     grid-template-rows: 500px;
   }
 
   .affiliation h4{
     /* float: left; */
-    grid-column: 50%;
+    grid-column: 1/auto;
     grid-row: 1 / auto;
     padding-left: 30px;
     padding-right: 30px;
+    text-align: left;
   }
 
   .affiliation p{
     padding-left: 30px;
     padding-right: 30px;
     font-size: 20px;
-    grid-column: 50%;
+    grid-column: 2/auto;
     grid-row: 1 / auto;
+    text-align: left;
   }
-
-
 }
 /* End of desktop view */
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto;
+  }
+
+  .skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: none !important;
+    transition: none !important;
+    z-index: 1;
+  }
+
+  .skip a:focus{
+    top:0;
+  }
+}

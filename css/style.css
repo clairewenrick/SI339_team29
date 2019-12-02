@@ -273,22 +273,19 @@ nav p{
 
 .abstract h2{
 	color: #3B8686;
-	padding-bottom: 20px;
-	font-size: 24px;
-	text-decoration: underline;
+	padding-bottom: 10px;
+	font-size: 45px;
 }
 .video h2{
 	padding-top: 20px;color: #3B8686;
-	padding-bottom: 20px;
-	font-size: 24px;
-	text-decoration: underline;
+	padding-bottom: 30px;
+	font-size: 45px;
 }
 
 .talk h2{
 	color: #3B8686;
-	padding-bottom: 20px;
-	font-size: 24px;
-	text-decoration: underline;
+	padding-bottom: 30px;
+	font-size: 45px;
 }
 footer{
 	grid-row: -1/ span 1;

@@ -172,7 +172,7 @@ body{
   text-align: center;
   text-decoration: none;
   display: inline-block;
-} 
+}
 
 .talk a:hover, .talk a:active {
   background-color: #3B8686;
@@ -185,12 +185,20 @@ body{
 	padding-top: 20px;
 }
 
-
+.abstract h2{
+	color: #3B8686;
+	padding-bottom: 20px;
+	font-size: 24px;
+	text-decoration: underline;
+}
 .video h2{
-	padding-top: 20px;
+	padding-top: 20px;color: #3B8686;
+	padding-bottom: 20px;
+	font-size: 24px;
+	text-decoration: underline;
 }
 
-h2{
+.talk h2{
 	color: #3B8686;
 	padding-bottom: 20px;
 	font-size: 24px;
@@ -242,9 +250,9 @@ footer {
 		text-align: center;
 	}
 
-	
+
 	.video{
-		
+
 		grid-row: 1/ span 1;
 		grid-column: 2/ span 1;
 		display: block;
@@ -269,6 +277,6 @@ footer {
 	border-radius: 5px;
 
 }
-	
+
 
 	}

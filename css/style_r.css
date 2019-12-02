@@ -223,11 +223,6 @@ footer{
     grid-template-rows: 500px;
   }
 
-  .about:hover, .us:hover, .affiliation:hover {
-    background-color: #ffffe0;
-    border-color: #0B486B;
-  }
-
   .about h2{
     grid-column: 1/auto;
     grid-row: 1 / auto;
@@ -302,6 +297,13 @@ footer{
     text-align: left;
   }
 }
+
+    /* .about:hover, .us:hover, .affiliation:hover {
+      background-color: #ffffe0;
+      border-color: #0B486B;
+    } */
+
+
 /* End of desktop view */
 
 @media screen and (prefers-reduced-motion: reduce){

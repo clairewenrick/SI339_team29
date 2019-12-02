@@ -342,7 +342,7 @@ footer{
 
   display: grid;
   grid-row-gap: 30px;
-  grid-template-rows: 425px 425px 425px 425px 425px 425px;
+  grid-template-rows: 425px 425px 425px 425px 445px 445px;
 }
 
 #mark-newman {
@@ -385,6 +385,7 @@ footer{
   color: #252525;
 }
 .paragraph h2, p {
+  padding-top: 20px;
   text-align: center;
 }
 
@@ -403,7 +404,7 @@ footer{
   padding-bottom: 10px;
   line-height: 1.2;
 }
-.people h2 {
+.people h2 a{
   font-size: 30px;
   font-family: 'Raleway', sans-serif;
 }
@@ -420,14 +421,13 @@ footer{
   color: #79BD9A;
 }
 .icons {
-  padding-left: 7px;
-  padding-top: 17px;
+  padding-top: 24px;
 }
 .icons a {
   text-decoration: none;
   color: white;
   background-color: #0B486B;
-  padding: 11px;
+  padding: 12px;
   border-radius: 10px;
 }
 
@@ -553,7 +553,7 @@ nav a.active, nav a:hover {
   position: absolute;
   float: left;
   top: 0;
-  margin-top: 25px;
+ /* margin-top: 20px;*/
 }
 #top-title {
   background-color: white;

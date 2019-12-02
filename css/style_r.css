@@ -108,7 +108,7 @@ nav ul{
   border: 2px solid #0B486B;
 }
 
-header{
+#index_main{
   grid-column: 1/-1;
   grid-row: 2/auto;
   background-image: url('../images/indextrees.jpg');
@@ -120,11 +120,11 @@ header{
   margin-bottom: 30px;
 }
 
-h1 {
+#index_main h1 {
   display: none;
 }
 
-.fraction{
+.index_fraction{
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 200px 250px 200px;

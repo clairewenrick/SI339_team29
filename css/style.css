@@ -91,6 +91,7 @@ header {
 .card-text {
   padding: 20px;
   color: #252525;
+  text-align: left;
 }
 .publication-links p {
   margin-bottom: 10px;
@@ -384,7 +385,7 @@ footer{
   text-align: center;
   color: #252525;
 }
-.paragraph h2, p {
+.paragraph h2, .paragraph p {
   text-align: center;
 }
 

@@ -382,7 +382,7 @@ footer{
   text-align: center;
   color: #252525;
 }
-.paragraph h2, p {
+.paragraph h2, .paragraph p {
   padding-top: 20px;
   text-align: center;
 }

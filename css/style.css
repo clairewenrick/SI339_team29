@@ -146,7 +146,7 @@ nav {
 
 }
 .menu-btn{
-  background-color: #3B8686;
+  background-color: #0B486B;
   color: white;
   font-size: 16px;
   border: none;
@@ -176,7 +176,7 @@ nav {
 }
 .menu a:hover, .menu a.active {
   color: white;
-  background-color: #3B8686;
+  background-color: #0B486B;
   /* #79BD9A */
 }
 

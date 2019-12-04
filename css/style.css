@@ -519,7 +519,7 @@ footer{
   padding-bottom: 15px;
 }
 footer {
-  color: #3B8686;
+  color: #296060;
 }
 /* End of mobile view */
 
@@ -548,7 +548,7 @@ nav li {
 nav a {
   text-decoration: none;
   padding: 10px;
-  color: #3B8686;
+  color: #296060;
   border-radius: 5px;
 }
 nav a.active, nav a:hover {

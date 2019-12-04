@@ -176,7 +176,8 @@ nav {
 }
 .menu a:hover, .menu a.active {
   color: white;
-  background-color: #79BD9A;
+  background-color: #3B8686;
+  /* #79BD9A */
 }
 
 .dropcontent:hover .menu, .dropcontent:focus .menu{
